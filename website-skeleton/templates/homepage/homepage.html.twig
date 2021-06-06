@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Partnerské rozhraní | Domovská stránka {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+{% endblock %}
+
+{% block body %}
+    <p class="siteHeading mb-0">Partnerské rozhraní Automato</p>
+    <p class="siteNote mb-5">Zde si zvolte kam chcete pokračovat.</p>
+    <div class="row mb-3">
+        <div class="card mr-3 col-sm">
+            <div class="card-body">
+                <h5 class="card-title">Technická prohlídka</h5>
+                <a href="{{ path('appMain', {'route':'car-check'}) }}" class="card-link">Zapsat prohlídku do aplikace klienta</a>
+            </div>
+        </div>
+        <div class="card mr-3 col-sm">
+            <div class="card-body">
+                <h5 class="card-title">Servisní úkon</h5>
+                <a href="{{ path('appMain', {'route':'car-fix'}) }}" class="card-link">Zapsat úkon do aplikace klienta</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

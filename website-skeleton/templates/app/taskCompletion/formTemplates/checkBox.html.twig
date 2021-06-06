@@ -1,0 +1,13 @@
+<div class="switchBox formBox">
+    <div class="custom-switch">
+        <input type="hidden" name="{{ checkPoint['alias'] }}-bool" value="0" >
+        <input {% if memData[checkPoint['alias'] ~ '-bool'] is defined %} checked {% endif %} type="checkbox" name="{{ checkPoint['alias'] }}-bool" class="custom-control-input" id="{{ checkPoint['alias'] }}-bool" value="1">
+        <label class="custom-control-label inputLabel" for="{{ checkPoint['alias'] }}-bool">{{ checkPoint['label'] }}</label>
+    </div>
+    <div class="inputPartHidden">
+        <div class="form-group mt-3">
+            <textarea name="{{ checkPoint['alias'] }}-note" class="w-100" rows="3" placeholder="Popište podrobně nalezenou závadu">{% if memData[checkPoint['alias'] ~ '-note'] is defined %}{{ memData[checkPoint['alias'] ~ '-note'] }}{% endif %}</textarea>
+        </div>
+        <div class="line"></div>
+    </div>
+</div>

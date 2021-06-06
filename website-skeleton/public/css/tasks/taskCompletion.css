@@ -1,0 +1,60 @@
+.formContainer{
+    max-width: 55%;
+    margin: 20px auto;
+}
+.formBox{
+    margin: 15px 0;
+}
+.inputLabel{
+    font-size: 18px;
+}
+.line{
+    margin-top: 30px;
+    position: relative;
+    right: 15%;
+}
+.formLine{
+    margin: 30px auto 50px auto;
+    width: 100%;
+    position: unset;
+    height: 1px;
+    background-color: dimgrey;
+}
+.formHeading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    line-height: 1;
+}
+.formSubHeading{
+    text-align: left;
+    font-size: 22px;
+    line-height: 1;
+    margin: 40px 0 10px -20px;
+    color: #333333;
+}
+.inputPartHidden{
+    display: none;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(43, 43, 43, 0.37);
+}
+#popup{
+    display: none;
+    box-shadow: -2px 2px 54px 12px rgba(0, 0, 0, 0.41);
+    width: 30vw;
+    padding: 15px 0;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-right: -15vw;
+    margin-top: -10vh;
+    z-index: 2;
+}

@@ -1,0 +1,27 @@
+.info-block-text{
+    margin: 0;
+    font-weight: 600;
+    line-height: 1;
+}
+.info-block-subtext{
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+}
+.docs-btn{
+    margin: 20px 15px 0 0;
+    background-color: #e06800;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: solid 4px #e06800;
+}
+.docs-btn:hover{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+.docs-block{
+    margin: 50px 0 5px 0;
+}

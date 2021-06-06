@@ -1,0 +1,18 @@
+.teamImg{
+    width: 100%;
+}
+.info-block{
+    max-width: 450px;
+    margin: 30px 40px;
+}
+.info-block-text{
+    margin: 0 0 5px 0;
+    line-height: 1;
+    font-weight: 600;
+}
+.info-block-subtext{
+    max-width: 70%;
+}
+.info-block-contact{
+    margin: 30px 0 -20px 0;
+}

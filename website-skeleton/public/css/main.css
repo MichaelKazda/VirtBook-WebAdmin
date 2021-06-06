@@ -1,0 +1,39 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.siteHeading{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin: 50px 0px 20px 0px;
+}
+.siteNote{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+.info-block{
+    display: inline-block;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+.info-block-left{
+    float: left;
+}
+.info-block-right{
+    float: right;
+}
+.info-block-text{
+    font-size: 30px;
+}
+.info-block-subtext{
+    font-size: 18px;
+}
+.line{
+    width: 130%;
+    height: 1px;
+    background-color: #AAAAAA;
+}
+.pointer{
+    cursor: pointer;
+}

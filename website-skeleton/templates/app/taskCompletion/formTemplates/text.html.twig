@@ -1,0 +1,4 @@
+<div class="form-group formBox">
+    <label class="inputLabel" for="{{ checkPoint['alias'] }}">{{ checkPoint['label'] }}</label>
+    <input type="text" class="form-control" id="{{ checkPoint['alias'] }}" name="{{ checkPoint['alias'] }}" value="{% if memData[checkPoint['alias']] is defined %}{{ memData[checkPoint['alias']] }}{% endif %}">
+</div>

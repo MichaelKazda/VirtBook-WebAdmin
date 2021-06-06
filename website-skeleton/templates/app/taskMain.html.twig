@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/tasks/taskMain.css') }}">
+{% endblock %}
+
+{% block body %}
+    <p class="siteHeading mb-0">Zadejte ID servisní knížky</p>
+    <p class="siteNote">Tento kód Vám poskytne zákazník. Najde ho na hlavní stránce aplikace.</p>
+
+    <form method="post" action="{{ path('appCompletion') }}">
+        <div class="form-group my-4 text-center">
+            <input type="text" class="form-control codeInput mr-3" name="code" placeholder="Zadejte ID servisní knížky">
+            <input type="submit" class="btn btn-primary" name="submit" value="Odeslat">
+        </div>
+
+        {% for message in app.flashes('codeErrMsg') %}
+            <div class="form-group my-4 text-center">
+                <p class="text-danger h5">{{ message }}</p>
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('successMsg') %}
+            <div class="form-group my-4 text-center">
+                <p class="text-success h5">{{ message }}</p>
+            </div>
+        {% endfor %}
+    </form>
+
+    <p class="serviceText">Služba: <span class="serviceName">{{ serviceName }}</span></p>
+
+{% endblock %}

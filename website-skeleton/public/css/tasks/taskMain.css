@@ -1,0 +1,17 @@
+.codeInput{
+    width: 80%;
+    display: inline-block;
+}
+.tasksInfo{
+    width: 300px;
+    word-wrap: break-word;
+    text-align: right;
+}
+.serviceName{
+    font-weight: 600;
+    font-size: 25px;
+}
+.serviceText{
+    text-align: center;
+    font-size: 20px;
+}
